@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-char Chr;
-int Intg;
-long int L_Int:
-long long int LLI;
-float Float;
+	char Chr;
+	int Intg;
+	long int L_Int:
+	long long int LLI;
+	float Float;
 printf("Size of a char: = %lu byte(s)\n", (unsigned long)sizeof(Chr));
 printf("Size of an int: = %lu byte(s)\n", (unsigned long)sizeof(Intg));
 printf("Size of a long int: = %lu byte(s)\n", (unsigned long)sizeof(L_Int));
