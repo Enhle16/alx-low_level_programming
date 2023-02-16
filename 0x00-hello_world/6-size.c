@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-char Character;
-int Interger;
-long int Long_interger:
-long long int Long_Long_interger;
+char Chr;
+int Intg;
+long int L_Int:
+long long int LLI;
 float Float;
-printf("Size of a char: = %d byte(s)\n", sizeof(Character));
-printf("Size of an int: = %d byte(s)\n", sizeof(Interger));
-printf("Size of a long int: = %d byte(s)\n", sizeof(Long_interger));
-printf("Size of a long long int: = %d byte(s)\n", sizeof(Long_Long_interger));
-printf("Size of a float: = %d byte(s)\n", sizeof(Float));
+printf("Size of a char: = %lu byte(s)\n", (unsigned long)sizeof(Chr));
+printf("Size of an int: = %lu byte(s)\n", (unsigned long)sizeof(Intg));
+printf("Size of a long int: = %lu byte(s)\n", (unsigned long)sizeof(L_Int));
+printf("Size of a long long int: = %lu byte(s)\n", (unsigned long)sizeof(LLI));
+printf("Size of a float: = %lu byte(s)\n", (unsigned long)sizeof(Float));
 return (0);
 }
