@@ -1,42 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - Prints "Fizz" for multiples of 3, "Buzz" for multiples of 5,
- * and "FizzBuzz" for multiples of both 3 and 5.
- *
+ * main -  checks for checks for a digit (0 through 9).
  * Return: Always 0.
  */
-
 int main(void)
 {
-    int n;
+	int x;
 
-    n = 1;
-
-    printf("%d", n);
-
-    for (n = 2; n <= 100; n++)
-    {
-        if ((n % 3 == 0) && (n % 5 == 0))
-        {
-            printf(" FizzBuzz");
-        }
-        else if (n % 3 == 0)
-        {
-            printf(" Fizz");
-        }
-        else if (n % 5 == 0)
-        {
-            printf(" Buzz");
-        }
-        else
-        {
-            printf(" %d", n);
-        }
-    }
-
-    printf("\n");
-
-    return (0);
+	for (x = 1; x <= 100; x++)
+	{
+		if (x % 3 == 0 || x % 5 == 0)
+		{
+			if (x % 3 == 0)
+			{
+				printf("Fizz");
+			}
+			if (x % 5 == 0)
+			{
+				printf("Buzz");
+			}
+		}
+		else
+		{
+			printf("%d", x);
+		}
+		if (x != 100)
+		{
+		putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }
-
