@@ -1,33 +1,42 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
- * main - Enrty
+ * main - prints "Fizz" for multiples of 3, "Buzz" for multiples of 5,
+ * and "FizzBuzz" for multiples of both 3 and 5
  *
- * Description: prints the numbers 1 - 100
- * The program prints Fizz for multiples of 3
- * Buzz for multiple of 5
- * and FizzBizz for multiple of 3 and 5.
- *
- * Return: always 0
+ * Return: Always 0
  */
+
 int main(void)
 {
-	int i;
+        int n;
 
-	for (i = 0; i <= 100; i++)
-	{
-		if (i % 15 == 0)
-			printf("FizzBuzz");
-		else if (i % 3 == 0)
-			printf("Fizz");
-		else if (i % 5 == 0)
-			printf("Bizz");
-		else
-			printf("%i", i);
-		if (i < 100)
-			printf(" ");
-	}
-	printf("\n");
-	return (0);
+        n = 1;
+
+        printf("%d", n);
+
+        for (n = 2; n <= 100; n++)
+        {
+                if ((n % 3 == 0) && (n % 5 == 0))
+                {
+                        printf(" FizzBuzz");
+                }
+                else if (n % 3 == 0)
+                {
+                        printf(" Fizz");
+                }
+                else if (n % 5 == 0)
+                {
+                        printf(" Buzz");
+                }
+                else
+                {
+                        printf(" %d", n);
+                }
+        }
+
+        printf("\n");
+
+        return (0);
 }
+
