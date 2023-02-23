@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_triangle - prints a triangular shape
+ * print_triangle - print a triangle
  *
  * @size: size of the triangle
- * Return: void
+ * Return: 0
  */
 
 void print_triangle(int size)
