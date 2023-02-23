@@ -1,24 +1,33 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main -  checks for checks for a digit (0 through 9).
+ * print_triangle - prints a triangular shape
  *
- * Return: Always 0.
+ * @size: size of the triangle
+ * Return: void
  */
-int main(void)
+
+void print_triangle(int size)
 {
-	long x, y;
+	int row, hashes, spaces;
 
-	x = 612852475143;
-
-	for (y = 2; x > y; y++)
+	if (size <= 0)
 	{
-		while (x % y == 0)
+		_putchar('\n');
+	}
+	else
+	{
+		for (row = 1; row <= size; row++)
 		{
-			x = x / y;
+			for (spaces = size - row; spaces >= 1; spaces--)
+			{
+				_putchar(' ');
+			}
+			for (hashes = 1; hashes <= row; hashes++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
 	}
-	printf("%lu", y);
-	putchar('\n');
-	return (0);
 }
