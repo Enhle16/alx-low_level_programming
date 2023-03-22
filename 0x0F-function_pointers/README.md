@@ -42,8 +42,6 @@ All of the following files are programs written in C:
 * Write a program that performs simple operations.
 
 
-### [4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker](./100-main_opcodes.c)
-* Write a program that prints the opcodes of its own main function.
 
 ---
 
