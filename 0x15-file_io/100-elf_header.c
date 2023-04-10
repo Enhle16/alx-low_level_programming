@@ -1,6 +1,5 @@
-/*
+i iin b  i/*
  * File: 100-elf_header.c
- * Auth: Bamidele Adefolaju
  */
 
 #include <elf.h>
