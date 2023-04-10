@@ -1,6 +1,4 @@
-i iin b  i/*
- * File: 100-elf_header.c
- */
+i iin b  i
 
 #include <elf.h>
 #include <sys/types.h>
